@@ -1,6 +1,6 @@
 #include "main.h"
 #include "version.h"
-
+// Test UX32
 const uint8_t PIN1 = D4;
 const uint8_t PIN2 = D5;
 float temperature1 = 0;
