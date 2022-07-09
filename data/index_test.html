@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ESP8266</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="data:," />
+    <!-- <link rel="stylesheet" href="css/font-awesome.min.css" /> -->
+    <script
+      src="https://kit.fontawesome.com/30832b9e8a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="headcontainer" style="font-size: 2rem">ESP8266</div>
+    <div class="headcontainer">
+      <a href="/settings" type="button" class="headbutton"
+        ><i class="fa fa-wrench"></i
+      ></a>
+    </div>
+    
+<div style="font-size: 1.2rem; text-transform: uppercase; font-weight: bold;">Test Board</div>
+ 
+<span id="time" style="font-style: italic">Wed Jun 29 09:53:53 2022
+</span>
+
+    <h2>MAIN</h2>
+    
+<div style="font-weight:bold ; margin-bottom: 2rem">
+Temperature: 27.1&#x000B0;C<br>
+Humidity: 31&#x00025;<br>
+Pressure: 752mmHg
+</div>
+ 
+ <input type="text" id="input_1" style="text-align: center; width: 5rem; font-size: 1rem; font-weight: bold;" placeholder="VALUE"/>
+ <button type="button" id="button3" onclick="processingButton(this)" style="margin-left: 1rem">SEND</button>
+ <br><br>
+ <h3>PIN 2</h3>
+ <label class="switch"><input type="checkbox" onchange="toggleCheckbox(this)" id="switch2" checked>
+ <span class="slider"></span></label><h3>Enable button</h3><label class="switch">
+ <input type="checkbox" onchange="showElement(button1, this.checked)" id="switchreset" ><span class="slider">
+ </span></label>
+ <br><br>
+ <button type="button" id="button1" disabled="false" onclick="processingButton(this)">BUTTON1</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>

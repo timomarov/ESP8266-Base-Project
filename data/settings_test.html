@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ESP8266</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <div class="headcontainer" style="font-size: 2rem">ESP8266</div>
+    <div class="headcontainer">
+      <a href="/" type="button" class="headbutton"
+        ><i class="fa fa-home"></i
+      ></a>
+    </div>
+     
+<div style="font-size: 1.2rem; text-transform: uppercase; font-weight: bold;">Test Board</div>
+  
+<span id="time" style="font-style: italic">Wed Jun 15 05:48:41 2022
+</span>
+
+    <h2>SETTINGS</h2>
+     
+<form action="/settingsSave" method="get">
+  <div style="margin-bottom: 1rem">
+    <label for="name">Name:</label><input name="name" id="name" value="Test Board">
+    <label for="ssid">SSID:</label><input name="ssid" id="ssid" value="R2-10">
+    <label for="ssidPwd">Password:</label><input type="password" name="ssidPwd" id="ssidPwd" value="">
+    <div style="margin-top: 2.5rem;">
+      <button type="submit">Save</button>
+    </div>
+  </div>
+</form>
+
+    <script src="script.js"></script>
+  </body>
+</html>

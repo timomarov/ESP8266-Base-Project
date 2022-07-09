@@ -1,0 +1,14 @@
+{
+  "name": "Test Board",
+  "ssid": "SSID",
+  "ssidPwd": "PASSWORD",
+  "host": "HOSTNAME",
+  "port": 80,
+  "botToken": "0000000000:XXXXXXXXXXXXXXXXXXXXXXXX",
+  "adminChatId": "ADMINCHATID",
+  "sqlIp": "IP",
+  "sqlPort": "3307",
+  "sqlUser": "SQLUSER",
+  "sqlPwd": "SQLPASS",
+  "sqlDb": "SQLDB"
+}

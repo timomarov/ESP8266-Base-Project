@@ -1,0 +1,144 @@
+html {
+  font-family: Arial;
+  color: rgb(50, 50, 50);
+  display: inline-block;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+  text-transform: uppercase;
+}
+
+body {
+  max-width: 600px;
+  margin: 0px auto;
+  padding-bottom: 25px;
+}
+
+button {
+  color: rgba(255, 255, 255, 1); /* цвет текста */
+  text-decoration: none; /* убирать подчёркивание у ссылок */
+  user-select: none; /* убирать выделение текста */
+  background-color: rgba(204, 0, 75, 1); /* фон кнопки */
+  font-size: 1rem;
+  padding: 0.75em 1em; /* отступ от текста */
+  border-radius: 10px;
+  border: 0;
+  outline: none; /* убирать контур в Mozilla */
+}
+
+button:disabled {
+  background-color: rgba(204, 204, 204, 1); /* фон кнопки */
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 80px;
+  height: 40px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(204, 204, 204, 1);
+  border-radius: 31px;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 30px;
+  left: 5px;
+  bottom: 5px;
+  background-color: rgba(255, 255, 255, 1);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 26px;
+}
+input:checked + .slider {
+  background-color: rgba(204, 0, 75, 1);
+}
+input:checked + .slider:before {
+  -webkit-transform: translateX(40px);
+  -ms-transform: translateX(40px);
+  transform: translateX(40px);
+}
+
+form {
+  width: 12rem;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+label {
+  content: attr(type);
+  font-size: small;
+  font-style: italic;
+  text-align: left;
+  display: block;
+  margin: 1rem 0rem 0rem;
+}
+
+input {
+  font-size: small;
+  font-weight: bold;
+  width: 100%;
+  padding: 0.3rem;
+  box-sizing: border-box;
+  background: none;
+  outline: none;
+  resize: none;
+  border: 0;
+  transition: all 0.3s;
+  border-bottom: 2px solid rgba(204, 204, 204, 1);
+}
+
+input:focus {
+  border-bottom: 2px solid rgba(204, 0, 75, 1);
+}
+
+.headcontainer {
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.headbutton {
+  color: rgba(255, 255, 255, 1); /* цвет текста */
+  background-color: rgba(204, 0, 75, 1); /* фон кнопки */
+  font-size: 1.4rem;
+  padding: 0.45rem 0.5rem; /* отступ от текста */
+  margin-left: 0.5rem;
+  text-decoration: none; /* убирать подчёркивание у ссылок */
+  user-select: none; /* убирать выделение текста */
+  border-radius: 10px;
+  border: 0;
+  outline: none; /* убирать контур в Mozilla */
+}
